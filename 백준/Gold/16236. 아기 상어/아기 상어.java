@@ -81,20 +81,12 @@ public class Main {
 				int nr = shark.r + dR[i];
 				int nc = shark.c + dC[i];
 				int ndist = shark.dist + 1;
-				
-//				System.out.println("nr " + nr +" nc " + nc);
-//				
-//				for (int j = 0; j < 4; j++) {
-//					System.out.println(j + " " + Arrays.toString(map[j]));
-//				}
-				
+
 				
 				Shark newS = new Shark(nr, nc, ndist);
-//				System.out.println(shark.r);
-//				System.out.println("nr : " + nr +"nc : " +nc);
+
 				if ( nr >= 0 && nc >= 0 && nr < N && nc < N && !tfMap[nr][nc] && map[nr][nc] <= level ) {
 					if (map[nr][nc] < level && map[nr][nc] != 0) {
-//						System.out.println("nr " + nr + "nc " + nc);
 						eat.add(newS);
 					}
 					tfMap[nr][nc] = true;
@@ -108,7 +100,7 @@ public class Main {
 			
 			
 			if (cnt == 0 && !eat.isEmpty()) {
-				// 먹이의 가장 이상 적인 위치 계산
+
 				int len = eat.size(); 
 				if (len >= 2) {
 					eat.sort((Shark o1 , Shark o2) -> o1.r - o2.r);
@@ -124,9 +116,7 @@ public class Main {
 				len = eat.size(); 
 				if (len >= 2) {
 					eat.sort((Shark o1 , Shark o2) -> o1.c - o2.c); // 가장 왼쪽에 있는 물고기
-//					for (int i = 0; i < 2; i++) {
-//						System.out.println(eat.get(i).c);
-//					}
+
 				}
 				//먹이 판단
 				
@@ -146,10 +136,8 @@ public class Main {
 				eat.clear();
 				info.clear();
 				info.add(shark);
-//				cnt = info.size();
+
 			}
-			
-			////////////////////////////////
 			
 			
 			
