@@ -90,8 +90,5 @@ class Solution {
             method(type + 1 , num + i, temRes + a);
             if(a == 0) break;
         }
-
     }
-    
-    
 }
