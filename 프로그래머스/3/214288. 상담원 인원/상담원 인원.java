@@ -88,7 +88,7 @@ class Solution {
         for(int i = 1; i < N-K+2; i++){
             int a = map[i][type];
             method(type + 1 , num + i, temRes + a);
-            if(a == 0) break;
+            // if(a == 0) break;
         }
     }
 }

@@ -1,10 +1,10 @@
 # [level 3] 상담원 인원 - 214288 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/214288#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/214288) 
 
 ### 성능 요약
 
-메모리: 71.4 MB, 시간: 3.30 ms
+메모리: 77.7 MB, 시간: 3.93 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 02월 24일 20:33:57
+2024년 02월 25일 20:07:25
 
 ### 문제 설명
 
