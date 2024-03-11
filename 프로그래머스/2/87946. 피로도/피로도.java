@@ -3,7 +3,6 @@ class Solution {
     static int k , res ,tem , len;
     static int[][] arr;
     
-    
     public int solution(int p, int[][] dungeons) {
         k = p;
         arr = dungeons;
@@ -34,7 +33,5 @@ class Solution {
                 tem--;
             }
         }
-
     }
-    
 }
