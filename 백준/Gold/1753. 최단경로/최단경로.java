@@ -68,8 +68,9 @@ public class Main {
                 tf[nn.end] = true;
                 for (int i = 0; i < arrayList.get(nn.end).size(); i++) {
                     node tem = arrayList.get(nn.end).get(i);
-                    pq.add(new node(tem.end, res[nn.end] + tem.cost));
-
+                    if (!tf[tem.end]) {
+                        pq.add(new node(tem.end, res[nn.end] + tem.cost));
+                    }
                 }
             }
         }
